@@ -5,6 +5,8 @@
  *
  * echo - 可以输出一个或多个字符串
  * print - 只允许输出一个字符串，返回值总为 1
+ * echo 输出的速度比 print 快；
+ * echo 没有返回值，print 有返回值 1；
  */
 
 
@@ -29,9 +31,9 @@ print "<h2>PHP 很有趣!</h2>";
 print "Hello world!<br>";
 print "我要学习 PHP!" . "122121\n";
 
-$txt1="学习 PHP";
-$txt2="RUNOOB.COM";
-$cars=array("Volvo","BMW","Toyota");
+$txt1 = "学习 PHP";
+$txt2 = "RUNOOB.COM";
+$cars = array("Volvo", "BMW", "Toyota");
 
 print $txt1;
 print "<br>";
