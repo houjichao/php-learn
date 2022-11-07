@@ -50,14 +50,18 @@ class ParamsUtil
                 return CommonUtil::make_ret(CommError::$PARAM_INVALID, ["msg" => "{$key} has special character"]);
             }
         }
-
+        print("\nutil----------extract before params\n");
+        print_r($params);
         extract($params);
-        print("\nutil----------\n");
+        print("\nutil----------extract after params\n");
         print_r($params);
         print("\nutil----------\n");
         print_r($rules);
-        print("\nutil----------\n");
+        print("\nutil----------array_keys\n");
         print_r(array_keys($rules));
+
+        print("\nutil----------var_dump array_keys\n");
+        var_dump(array_keys($rules));
         $params = compact(array_keys($rules));
         return CommonUtil::make_suc($params);
     }
