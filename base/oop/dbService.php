@@ -25,10 +25,12 @@ class DbService
         self::getSalesGroupListByCondition([], ['groupId' => explode(',', $rule['groupIds'])]);
     }
 
+
 }
 
 $my = new DbService();
 $my->todo();
+
 
 //这里为了测试一下，在函数定义的时候如果都给了默认值，在调用的时候，可以不传参
 //$my->getSalesGroupListByCondition([], ['groupId' => explode(',', $rule['groupIds'])]);
