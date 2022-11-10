@@ -15,3 +15,11 @@ else
 {
     echo "Have a good night!";
 }
+
+echo "--------------\n";
+
+if ('2' == '02') {
+    echo 'true';
+} else {
+    echo 'false';
+}

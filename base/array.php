@@ -47,4 +47,43 @@ var_dump($rule);
 echo $rule['cid']['type'];
 echo "<br>";
 
+echo "----------\n";
 
+//d 的值为最大的整数索引+1。
+$a = array(
+    'a',
+    3 => 'b',
+    1 => 'c',
+    'd'
+);
+echo $a[4];
+
+echo "----------\n";
+//d 的值为最大的整数索引+1。
+$a = array();
+if ($a == null) {
+    echo 'true';
+} else {
+    echo 'false';
+}
+
+echo "----------\n";
+
+//键名将被这样转换：null 转为(空字符串)，true 转为 1，false 转为 0。
+$a = array(
+    null => 'a',
+    true => 'b',
+    false => 'c',
+    0 => 'd',
+    1 => 'e',
+    '' => 'f'
+);
+echo count($a), "\n";
+
+echo "----------\n";
+
+$a = array();
+if ($a[1]) {
+    echo "12j1ioj2oj";
+}
+echo count($a), "\n";
