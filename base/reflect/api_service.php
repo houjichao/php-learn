@@ -2,6 +2,7 @@
 
 define("APPLICATION_PATH", dirname(__FILE__) . DIRECTORY_SEPARATOR);
 
+//$userInterface = "user_service";
 $userInterface = "user_service1";
 $baseInterface = "base_service";
 $file_name = APPLICATION_PATH . $userInterface . '.php';
