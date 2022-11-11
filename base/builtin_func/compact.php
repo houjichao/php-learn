@@ -16,3 +16,6 @@ $name = array("firstname", "lastname");
 $result = compact($name, "location", "age");
 
 print_r($result);
+
+$customerId = "1111";
+var_dump(compact("customerId"));

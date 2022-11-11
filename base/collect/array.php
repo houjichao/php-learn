@@ -3,6 +3,9 @@
 /**
  * 数组学习
  */
+/**
+ * 数值数组
+ */
 $cars = array("Volvo", "BMW", "Toyota");
 $arrlength = count($cars);
 
