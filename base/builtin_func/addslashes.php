@@ -18,3 +18,5 @@ echo addslashes($str) . " This is safe in a database query.";
 echo "\n";
 $str = addslashes('What does "yolo" mean?');
 echo($str);
+
+

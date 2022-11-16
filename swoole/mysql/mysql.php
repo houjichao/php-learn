@@ -13,6 +13,10 @@ run(function () {
         'strict_type' => true ////开启严格模式，query方法返回的数据也将转为强类型,如果不开，student表的age返回就为string
     ]);
     $res = $swoole_mysql->query('select * from student');
-    var_dump($swoole_mysql->affected_rows);
-    var_dump($res);
+    //var_dump($swoole_mysql->affected_rows);
+    //var_dump($res);
+
+    //echo $res[0]['name'];
+    echo addslashes($res[0]['name']);
+
 });
