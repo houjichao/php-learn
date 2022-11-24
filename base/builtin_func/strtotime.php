@@ -24,7 +24,11 @@ $time = strtotime("2018-01-18 08:08:08");  // 将指定日期转成时间戳
 echo $time, PHP_EOL;
 
 // 更多实例
-echo strtotime("now"), PHP_EOL;
+$leadPeriod = "15";
+$str = '+' . (string)$leadPeriod . ' minutes';
+echo strtotime("+15 minutes"), PHP_EOL;
+echo date('Y-m-d H:i:s', strtotime($str));
+
 echo strtotime("now"), PHP_EOL;
 echo strtotime("10 September 2000"), PHP_EOL;
 echo strtotime("+1 day"), PHP_EOL;

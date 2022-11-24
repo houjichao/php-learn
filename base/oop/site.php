@@ -62,4 +62,19 @@ class Site
     }
 
 
+    public static function test() {
+        $hasNoFollowerLeadCidMap['111'][] = 'jack';
+        $hasNoFollowerLeadCidMap['111'][] = 'jack1';
+        $hasNoFollowerLeadCidMap['222'][] = 'pony';
+        $hasNoFollowerLeadCidMap['222'][] = 'pony1';
+        self::test1($hasNoFollowerLeadCidMap);
+        print_r($hasNoFollowerLeadCidMap);
+    }
+
+    public static function test1($hasNoFollowerLeadCidMap) {
+        $hasNoFollowerLeadCidMap['333'][] = "eason";
+    }
+
 }
+$site = new Site();
+$site::test();

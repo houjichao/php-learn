@@ -19,3 +19,10 @@
 echo(mt_rand() . "\n");
 echo(mt_rand() . "\n");
 echo(mt_rand(10, 100));
+
+if (1) {
+    echo "asdjalskdjla";
+}
+if (0){
+    echo "1238012830128903";
+}
