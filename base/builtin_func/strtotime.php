@@ -19,6 +19,13 @@
 
 // 设置时区
 date_default_timezone_set("PRC");
+
+//将给定的一个时间增加180天
+$periodTime = strtotime("+180 day",strtotime("2022-11-25 00:00:00"));
+echo $periodTime;
+echo "\n";
+echo date('Y-m-d H:i:s', $periodTime);
+
 $time = strtotime("2018-01-18 08:08:08");  // 将指定日期转成时间戳
 // 打印当前时间  PHP_EOL 换行符，兼容不同系统
 echo $time, PHP_EOL;

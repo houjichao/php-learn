@@ -26,3 +26,7 @@ $a = array(3 => "red", 4 => "green");
 $b = array(10 => "white", 12 => "black");
 print_r(array_merge($a));
 print_r(array_merge($a, $b));
+
+print_r("---------\n");
+$extraData = ["msg" => "askldjaskld"];
+print_r(array_merge(['code' => 0, 'msg' => 'ok', 'data' => "1111"], $extraData)) ;
