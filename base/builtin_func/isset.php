@@ -18,3 +18,8 @@ $taskExpireTime = $lead['leadPeriodTime'] ?? null;
 echo "\n";
 var_dump($taskExpireTime);
 echo $taskExpireTime . "-----";
+
+$arr =  array(0,1);
+var_dump($arr);
+echo "$$$$$$$$$$$\n";
+echo implode(",",$arr);
