@@ -11,3 +11,7 @@ echo "-----------------\n";
 
 $extendAgentUin = '';
 var_dump(empty($extendAgentUin));
+
+echo "-----------------\n";
+
+print_r(implode(',', ['leadId', 'cid']));
