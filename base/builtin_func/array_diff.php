@@ -22,3 +22,27 @@ $a2 = array("e" => "red", "f" => "green", "g" => "blue");
 
 $result = array_diff($a1, $a2);
 print_r($result);
+
+
+echo "---------\n";
+$list = [
+    0 => [
+        'id' => 1001,
+        'name' => '张三',
+        'sex' => '男'
+    ],
+    1 => [
+        'id' => 2091,
+        'name' => '李四',
+        'sex' => '女'
+    ]
+];
+$tmp = 'name';
+$key=array_search($tmp ,$list);
+array_splice($list,$key,1);
+var_dump($list);
+
+/*array_walk($list, function (&$item) {
+    $item = array_diff($item, ['name', 'sex']);
+});
+var_dump($list);*/
