@@ -16,9 +16,9 @@
  * 返回值：    介于 min（或 0）与 max（或 mt_getrandmax()）之间（包括边界值）的随机整数。如果 max < min 则返回 FALSE。
  */
 
+#echo(mt_rand() . "\n");
 echo(mt_rand() . "\n");
-echo(mt_rand() . "\n");
-echo(mt_rand(10, 100));
+echo(mt_rand(0, 4));
 
 if (1) {
     echo "asdjalskdjla";

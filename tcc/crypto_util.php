@@ -29,8 +29,9 @@ class CryptoUtil
         $key = self::$keys[$index];
         $fill_0_text = $text;
         while (0 != strlen($fill_0_text) % 16) {
-            $fill_0_text .= chr('0');
+            $fill_0_text .= chr(0);
         }
+        echo "fill_0_text-------".$fill_0_text;
         $data = openssl_encrypt($fill_0_text, 'aes-128-ecb', $key, OPENSSL_NO_PADDING);
         $data = base64_encode(chr(self::$ver) . chr($index) . $data);
         return $data;

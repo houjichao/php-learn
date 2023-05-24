@@ -4,3 +4,5 @@
  */
 $params['uin'] = 111;
 var_dump(strval($params['uin']));
+
+var_dump(time() . mt_rand(0, 10000));
