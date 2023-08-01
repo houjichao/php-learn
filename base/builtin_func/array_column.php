@@ -13,6 +13,7 @@
  * index_key    可选。作为返回数组的索引/键的列。
  */
 
+
 $a = array(
     array(
         'id' => 5698,
@@ -26,7 +27,7 @@ $a = array(
     ),
     array(
         'id' => 3809,
-        'first_name' => 'Joe',
+        'first_name' => 'Ben',
         'last_name' => 'Doe',
     )
 );
@@ -34,7 +35,7 @@ $a = array(
 //index_key可以不传，也可以传数组中没有的，那就会变成[0][1][2]
 //$arr = array_column($a, "last_name", "id");
 $arr = array_column($a, null, "first_name");
-
+print_r($arr);
 //print_r(json_encode($arr));
 
 $str = "[[{\"id\":10000,\"robotTaskId\":10003,\"belongModule\":7,\"cid\":\"dac7ced02e10b365e06cdeccec00be99\",\"phone\":\"13099260027\",\"status\":0,\"createTime\":\"2023-05-09 20:29:50\",\"pushTime\":\"0000-00-00 00:00:00\"}]]";

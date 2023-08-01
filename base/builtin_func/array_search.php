@@ -26,3 +26,12 @@ var_dump(array_search("black", $a));
 $a = array("a" => "5", "b" => 5, "c" => "5");
 echo array_search(5, $a) . "\n";
 echo array_search(5, $a, true);
+
+echo "-------\n";
+$field = "l.leadTags";
+$field = sprintf("COALESCE(%s,'[]')", $field);
+echo $field;
+$value = ["ifc_partner_application", "ifc_integrated_cooperaton", "ifc_certification_equipment", "ifc_tianlai_cooperation", "ifc_new_meeting_room", "ifc_retrofit_meeting_room"];
+$con = sprintf("JSON_OVERLAPS('%s', %s)", json_encode($value, JSON_UNESCAPED_UNICODE), $field);
+echo "-------\n";
+echo $con;

@@ -27,6 +27,9 @@
 $age = array("Peter" => "35", "Ben" => "37", "Joe" => "43");
 ksort($age);
 print_r($age);
+asort($age);
+print_r($age);
+
 
 //echo array_search("35", $age) . "\n";
 echo end($age);

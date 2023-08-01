@@ -20,3 +20,13 @@ var_export ($a);
 $b = 3.1;
 $v = var_export($b,true);
 var_dump($v);
+
+
+$total = 0;
+if ("111" == 111) {
+    $total = 2;
+}
+var_dump($total);
+
+$rowArr = explode(' ', "10:22:44");
+echo $rowArr[1];
